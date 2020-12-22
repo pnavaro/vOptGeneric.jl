@@ -56,7 +56,7 @@ jobs:
           julia --project=docs -e '
             using Documenter: doctest
             using vOptGeneric
-            doctest(HOODESolver)'
+            doctest(vOptGeneric)'
       - run: julia --project=docs docs/make.jl
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
